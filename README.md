@@ -3,8 +3,10 @@
 An end-to-end Retrieval-Augmented Generation (RAG) system that dynamically scrapes any web URL, retrieves relevant content using embeddings, and generates answers using customizable decoding strategies through an interactive Streamlit UI.
 
 ---
-
-## 🚀 Project Overview
+DEMO Vedio:
+1)StreamLit:https://youtu.be/Y_tANhJKFrw
+2)FASTAPI:https://youtu.be/wNCoJl0fCoM
+## Project Overview
 
 This project implements a **Dynamic RAG pipeline** where users can:
 
@@ -18,21 +20,21 @@ Unlike static RAG demos, this system builds the retrieval index **on-the-fly** f
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
-### 1️⃣ Ingestion Layer
+### 1️ Ingestion Layer
 - Web scraping
 - HTML cleaning
 - Text chunking
 - Embedding generation
 - Vector storage
 
-### 2️⃣ Retrieval Layer
+### 2️ Retrieval Layer
 - Query embedding
 - Semantic similarity search
 - Top-k context retrieval
 
-### 3️⃣ Generation Layer
+### 3️ Generation Layer
 - Prompt construction
 - LLM-based response generation
 - Multiple decoding strategies:
@@ -41,13 +43,13 @@ Unlike static RAG demos, this system builds the retrieval index **on-the-fly** f
   - Top-K Sampling
   - Top-P (Nucleus) Sampling
 
-### 4️⃣ Interface Layer
+### 4️ Interface Layer
 - **FastAPI** backend for model serving
 - **Streamlit** frontend for interactive experimentation
 
 ---
 
-## 🎛 Decoding Strategies Supported
+##  Decoding Strategies Supported
 
 | Strategy  | Description |
 |------------|-------------|
@@ -66,7 +68,7 @@ Adjustable parameters:
 
 ---
 
-## 🧠 Tech Stack
+##  Tech Stack
 
 - Python
 - PyTorch
@@ -82,7 +84,7 @@ Adjustable parameters:
 
 ## ⚙ Installation
 
-### 1️⃣ Clone Repository
+### 1️ Clone Repository
 
 git clone https://github.com/your-username/dynamic-url-rag.git
 cd dynamic-url-rag
@@ -96,10 +98,12 @@ Install Dependencies:
 pip install -r requirements.txt
 
 Running the Application:
-Step 1 — Start FastAPI Backend
+Step 1 — Start FastAPI Backend:
+
 uvicorn server.api:app --reload
 
 
-Step 2 — Start Streamlit Frontend (New Terminal)
+Step 2 — Start Streamlit Frontend (New Terminal):
+
 streamlit run playground/streamlit_app.py
 
